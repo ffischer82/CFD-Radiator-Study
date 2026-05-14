@@ -50,7 +50,7 @@ Visualization
 Example of flow structures using streamlines:
 
 
-![Streamlines](results/streamlines_AC.png)
+![Streamlines](results/streamlines_Ac.png)
 
 
 
