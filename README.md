@@ -5,10 +5,9 @@ This project investigates the influence of radiator placement on indoor airflow 
 ### Objective
 
 The objective of this study is to evaluate how different radiator positions affect:
-
-Temperature distribution within a closed room
-Airflow structure and natural convection patterns
-Thermal comfort characteristics
+. Temperature distribution within a closed room
+. Airflow structure and natural convection patterns
+. Thermal comfort characteristics
 
 ### Geometry and Model Setup
 
