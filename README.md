@@ -13,15 +13,15 @@ The objective of this study is to evaluate how different radiator positions affe
 
 A simplified indoor environment was modeled with the following dimensions:
 
-Room size: 5 m × 5 m × 2.5 m
-Geometry created in SolidWorks
-Fluid domain representing air
+- Room size: 5 m × 5 m × 2.5 m
+- Geometry created in SolidWorks
+- Fluid domain representing air
 
 ### Numerical Model
-Solver: buoyantSimpleFoam (steady-state)
-Flow type: incompressible, buoyancy-driven flow
-Density treatment: Boussinesq approximation
-Turbulence model: k-ε
+- Solver: buoyantSimpleFoam (steady-state)
+- Flow type: incompressible, buoyancy-driven flow
+- Density treatment: Boussinesq approximation
+- Turbulence model: k-ε
 
 ### Mesh Generation
 blockMesh used to generate a structured base mesh
@@ -29,10 +29,10 @@ snappyHexMesh applied for geometry adaptation
 
 ### Boundary Conditions
 Thermal boundary conditions were defined using a convective heat transfer model:
-Ambient temperature: 288 K
-Heat transfer coefficients:
-Walls: 2 W/(m²K) (well insulated surfaces)
-Windows: 10 W/(m²K) (higher heat loss)
+- Ambient temperature: 288 K
+- Heat transfer coefficients:
+-- Walls: 2 W/(m²K) (well insulated surfaces)
+-- Windows: 10 W/(m²K) (higher heat loss)
 
 The radiator acts as a heat source driving natural convection within the room.
 
