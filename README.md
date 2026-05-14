@@ -2,32 +2,34 @@
 
 This project investigates the influence of radiator placement on indoor airflow and temperature distribution using computational fluid dynamics (CFD) simulations in OpenFOAM.
 
-Objective
+### Objective
 
 The objective of this study is to evaluate how different radiator positions affect:
 
 Temperature distribution within a closed room
 Airflow structure and natural convection patterns
 Thermal comfort characteristics
-Geometry and Model Setup
+
+### Geometry and Model Setup
 
 A simplified indoor environment was modeled with the following dimensions:
 
 Room size: 5 m × 5 m × 2.5 m
 Geometry created in SolidWorks
 Fluid domain representing air
-Numerical Model
+
+### Numerical Model
 Solver: buoyantSimpleFoam (steady-state)
 Flow type: incompressible, buoyancy-driven flow
 Density treatment: Boussinesq approximation
 Turbulence model: k-ε
-Mesh Generation
+
+### Mesh Generation
 blockMesh used to generate a structured base mesh
 snappyHexMesh applied for geometry adaptation
-Boundary Conditions
 
+### Boundary Conditions
 Thermal boundary conditions were defined using a convective heat transfer model:
-
 Ambient temperature: 288 K
 Heat transfer coefficients:
 Walls: 2 W/(m²K) (well insulated surfaces)
@@ -35,7 +37,7 @@ Windows: 10 W/(m²K) (higher heat loss)
 
 The radiator acts as a heat source driving natural convection within the room.
 
-Results and Discussion
+### Results and Discussion
 
 The simulations show:
 
@@ -54,7 +56,7 @@ Example of flow structures using streamlines:
 
 
 
-Reproducibility
+### Reproducibility
 
 The simulation can be reproduced using:
 
@@ -62,7 +64,7 @@ cd case
 chmod +x Allrun
 ./Allrun
 
-Project Structure
+### Project Structure
 
 CFD-Radiator-Study/
 ├── case/ OpenFOAM simulation setup
@@ -70,17 +72,17 @@ CFD-Radiator-Study/
 ├── report/ Detailed project report
 └── README.md
 
-Report
+### Report
 
 A detailed description of methodology, assumptions, and results is available in:
 
 report/CFD_Radiator_Study.pdf
 
-Author
+#### Author
 
 Florian Fischer
 
-Remarks
+#### Remarks
 
 This project was developed as part of a self-driven learning process in CFD, with focus on:
 
