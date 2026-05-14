@@ -108,9 +108,7 @@ Florian Fischer
 
 This project was developed as part of a self-driven CFD learning process and focuses on:
 
-Natural convection modeling
-OpenFOAM case setup and workflow
-Interpretation of simulation results
+Natural convection modeling OpenFOAM case setup and workflow Interpretation of simulation results.
 
 
 
