@@ -70,10 +70,11 @@ These findings suggest that radiator placement primarily affects **airflow and m
 Example of airflow structure using streamlines:
 
 <p align="center">
-  <img src="results/streamlines_Ac.png" width="700">
+  <img src="results/streamlines_AC.png" width="700">
 </p>
 
 ---
+
 ## Reproducibility
 
 The simulation can be reproduced using:
@@ -82,37 +83,3 @@ The simulation can be reproduced using:
 cd case
 chmod +x Allrun
 ./Allrun
-
-## Project Structure
-
-CFD-Radiator-Study/
-├── case/ OpenFOAM simulation setup
-├── results/ Post-processing visualizations
-├── report/ Detailed project report
-└── README.md
-
-## Report
-
-A detailed description of methodology, assumptions, and results is available in:
-
-report/CFD_Radiator_Study.pdf  
-
----
-
-## Author
-
-Florian Fischer  
-
----
-
-## Remarks
-
-This project was developed as part of a self-driven CFD learning process and focuses on:
-
-- Natural convection modeling  
-- OpenFOAM case setup and workflow  
-- Interpretation of simulation results  
-
-
-
-
