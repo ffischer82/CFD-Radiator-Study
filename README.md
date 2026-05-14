@@ -83,3 +83,37 @@ The simulation can be reproduced using:
 cd case
 chmod +x Allrun
 ./Allrun
+
+## Project Structure
+
+CFD-Radiator-Study/
+├── case/ OpenFOAM simulation setup
+├── results/ Post-processing visualizations
+├── report/ Detailed project report
+└── README.md
+
+## Report
+
+A detailed description of methodology, assumptions, and results is available in:
+
+report/CFD_Radiator_Study.pdf  
+
+---
+
+## Author
+
+Florian Fischer  
+
+---
+
+## Remarks
+
+This project was developed as part of a self-driven CFD learning process and focuses on:
+
+- Natural convection modeling  
+- OpenFOAM case setup and workflow  
+- Interpretation of simulation results  
+
+
+
+
