@@ -86,7 +86,7 @@ chmod +x Allrun
 ---
 ## Project Structure
 
-CFD-Radiator-Study/
+CFD-Radiator-Study/ \n
 ├── case/        OpenFOAM simulation setup  
 ├── results/     Post-processing visualizations  
 ├── report/      Detailed project report  
