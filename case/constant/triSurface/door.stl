@@ -1,0 +1,16 @@
+solid door
+   facet normal 1.972152e-31 1.000000e+00 1.665335e-16
+      outer loop
+         vertex 3.000000e+00 5.000000e-03 2.000001e+00
+         vertex 4.000000e+00 5.000000e-03 2.000001e+00
+         vertex 3.000000e+00 5.000000e-03 5.050000e-07
+      endloop
+   endfacet
+   facet normal 1.972152e-31 1.000000e+00 1.665335e-16
+      outer loop
+         vertex 3.000000e+00 5.000000e-03 5.050000e-07
+         vertex 4.000000e+00 5.000000e-03 2.000001e+00
+         vertex 4.000000e+00 5.000000e-03 5.050000e-07
+      endloop
+   endfacet
+endsolid

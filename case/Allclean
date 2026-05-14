@@ -1,0 +1,5 @@
+#!/bin/bash
+
+cd "${0%/*}" || exit
+
+rm -rf [0-9]* processor* postProcessing log*

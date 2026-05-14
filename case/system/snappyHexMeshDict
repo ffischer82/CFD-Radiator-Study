@@ -1,0 +1,140 @@
+FoamFile
+{
+    version     2.0;
+    format      ascii;
+    class       dictionary;
+    object      snappyHexMeshDict;
+}
+
+// --------------------------------------------------
+
+castellatedMesh true;
+snap            true;   // zuerst AUS
+addLayers       false;
+
+// --------------------------------------------------
+
+geometry
+{
+    raum
+    {
+        type triSurfaceMesh;
+        file "raum.stl";
+    }
+ 
+    radiator_2
+    {
+        type triSurfaceMesh;
+        file "radiator_2.stl";
+    }
+    radiator_3
+    {
+        type triSurfaceMesh;
+        file "radiator_3.stl";
+    }
+    
+     window_1
+    {
+        type triSurfaceMesh;
+        file "window_1.stl";
+    }   
+      window_2
+    {
+        type triSurfaceMesh;
+        file "window_2.stl";
+    }     
+ 
+}
+
+// --------------------------------------------------
+
+castellatedMeshControls
+{
+    maxLocalCells 1000000;
+    maxGlobalCells 2000000;
+    minRefinementCells 0;
+
+    nCellsBetweenLevels 10;
+
+    resolveFeatureAngle 60;
+
+    allowFreeStandingZoneFaces true;   // ❗ Pflicht in v2412
+
+    features ();
+
+    refinementSurfaces
+    {
+        raum
+        {
+            level (2 2);
+        }
+ 
+     radiator_2
+        {
+            level (2 2);
+        }
+     radiator_3
+        {
+            level (2 2);
+        }       
+      window_1
+        {
+            level (2 2);
+        } 
+      window_2
+        {
+            level (2 2);
+        } 
+        
+        
+    }
+
+    refinementRegions {}
+
+    locationInMesh (2.5 2.5 1);   // ggf. anpassen!
+}
+
+// --------------------------------------------------
+
+snapControls
+{
+    nSmoothPatch 3;
+    tolerance 2.0;
+    nSolveIter 30;
+    nRelaxIter 5;
+}
+
+// --------------------------------------------------
+
+addLayersControls
+{
+    relativeSizes true;
+}
+
+// --------------------------------------------------
+
+meshQualityControls
+{
+    maxNonOrtho 65;
+    maxBoundarySkewness 20;
+    maxInternalSkewness 4;
+    maxConcave 80;
+
+    minVol 1e-13;
+    minTetQuality 1e-9;
+
+    minArea -1;          // ❗ Pflicht
+    minTwist 0.02;       // ❗ Pflicht
+    minDeterminant 0.001;
+    minFaceWeight 0.02;
+    minVolRatio 0.01;
+    minTriangleTwist -1;
+
+    nSmoothScale 4;
+    errorReduction 0.75;
+}
+
+// --------------------------------------------------
+
+debug 0;
+mergeTolerance 1e-6;

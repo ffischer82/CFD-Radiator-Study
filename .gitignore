@@ -1,0 +1,10 @@
+# OpenFOAM
+[0-9]*/
+processor*/
+postProcessing/
+*.foam
+log*
+constant/polyMesh/
+# System files
+.DS_Store
+Thumbs.db
