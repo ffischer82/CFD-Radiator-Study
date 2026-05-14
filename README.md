@@ -74,7 +74,6 @@ Example of airflow structure using streamlines:
 </p>
 
 ---
-
 ## Reproducibility
 
 The simulation can be reproduced using:
