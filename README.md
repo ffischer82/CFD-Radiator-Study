@@ -1,4 +1,4 @@
-#+ CFD Radiator Placement Study
+## CFD Radiator Placement Study
 
 This project investigates the influence of radiator placement on indoor airflow and temperature distribution using computational fluid dynamics (CFD) simulations in OpenFOAM.
 
