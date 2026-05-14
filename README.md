@@ -70,7 +70,7 @@ These findings suggest that radiator placement primarily affects **airflow and m
 Example of airflow structure using streamlines:
 
 <p align="center">
-  <img src="results/streamlines_AC.png" width="700">
+  <img src="results/streamlines_Ac.png" width="700">
 </p>
 
 ---
