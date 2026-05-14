@@ -31,8 +31,8 @@ snappyHexMesh applied for geometry adaptation
 Thermal boundary conditions were defined using a convective heat transfer model:
 - Ambient temperature: 288 K
 - Heat transfer coefficients:
--- Walls: 2 W/(m²K) (well insulated surfaces)
--- Windows: 10 W/(m²K) (higher heat loss)
+ - Walls: 2 W/(m²K) (well insulated surfaces)
+ - Windows: 10 W/(m²K) (higher heat loss)
 
 The radiator acts as a heat source driving natural convection within the room.
 
